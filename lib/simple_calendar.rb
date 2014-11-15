@@ -1,6 +1,7 @@
 require "simple_calendar/calendar"
 require "simple_calendar/month_calendar"
 require "simple_calendar/week_calendar"
+require "simple_calendar/week_table"
 require "simple_calendar/model_additions"
 require "simple_calendar/railtie"
 require "simple_calendar/version"
