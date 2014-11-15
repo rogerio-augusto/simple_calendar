@@ -14,5 +14,10 @@ module SimpleCalendar
       raise 'week_calendar requires a block' unless block_given?
       SimpleCalendar::WeekCalendar.new(self, options).render(block)
     end
+
+    def week_table(options={}, &block)
+      raise 'week_table requires a block' unless block_given?
+      SimpleCalendar::WeekTable.new(self, options).render(block)
+    end
   end
 end
