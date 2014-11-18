@@ -11,8 +11,8 @@ module SimpleCalendar
     end
     
     def render_weeks
-      start_hour = @timezone.parse(get_option(:hour_range)[:first_hour])
-      end_hour = @timezone.parse(get_option(:hour_range)[:last_hour])
+      start_hour = Time.parse(get_option(:hour_range)[:first_hour])
+      end_hour = Time.parse(get_option(:hour_range)[:last_hour])
       
       capture do
         date_range.each_slice(7) do |week|
